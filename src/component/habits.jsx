@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Habit from './habit';
+import HabitAddForm from './habitAddForm';
 
  class Habits extends Component {
  
@@ -15,8 +16,14 @@ import Habit from './habit';
        this.props.onDelete(habit);
    }
 
+    handleAdd = name => {
+        this.props.onAdd(name);
+   }
+
     render() {
         return (
+        <>
+        <HabitAddForm  onAdd={this.handleAdd}/>
             <ul>
                 { this.props.habits.map(habit => (
                         <Habit 
@@ -28,6 +35,8 @@ import Habit from './habit';
                         /> //habit이라는 prop에 habit이라는 파라미터를 전달 
                 ))}
             </ul>
+            <button className="habits-reset" onClick={this.props.onReset}>Reset All</button>
+            </>
         );
     }
 }
