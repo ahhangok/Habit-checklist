@@ -21,6 +21,7 @@ import HabitAddForm from './habitAddForm';
    }
 
     render() {
+        console.log('habits');
         return (
         <>
         <HabitAddForm  onAdd={this.handleAdd}/>
@@ -28,11 +29,11 @@ import HabitAddForm from './habitAddForm';
                 { this.props.habits.map(habit => (
                         <Habit 
                         key={habit.id} 
-                        habit={habit} 
+                        habit={habit}  //habit이라는 prop에 habit이라는 파라미터를 전달 
                         onIncrement={this.handleIncrement} 
                         onDecrement={this.handleDecrement}
                         onDelete={this.handleDelete}
-                        /> //habit이라는 prop에 habit이라는 파라미터를 전달 
+                        /> 
                 ))}
             </ul>
             <button className="habits-reset" onClick={this.props.onReset}>Reset All</button>
