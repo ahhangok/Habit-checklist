@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+.habit-checklist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5em auto;
+  padding: 2em;
+  border: 4px solid #48426d;
+  width: 700px;
+  background-color: #fde9b7;
+}
+
 button {
   outline: none;
   border: 0;
@@ -9,13 +21,14 @@ button {
 }
 
 .navbar {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 1em;
-  background-color: blanchedalmond;
+  border-bottom: 3px solid #48426d;
+  margin-bottom: 0.5em;
 }
 
 .navbar-logo {
-  color: green;
+  color: #312c51;
   margin-right: 0.5em;
 }
 
@@ -26,15 +39,19 @@ button {
   width: 2.5rem;
   height: 2.5rem;
   line-height: 2.5rem;
-  margin-left: 0.2em;
-  background-color: green;
+  background-color: #48426d;
   color: white;
   border-radius: 50%;
+  margin-left: 0.3em;
 }
 
 .habits {
   padding: 0.5em;
   padding-top: 2em;
+}
+.dash-bar {
+  margin: 0.2em;
+  border-bottom: 2px dashed #48426d;
 }
 
 .add-input {
@@ -49,7 +66,7 @@ button {
   height: 100%;
   font-size: 1.5rem;
   padding: 0.3em 0.5em;
-  background-color: green;
+  background-color: #48426d;
   color: white;
 }
 
@@ -57,6 +74,9 @@ button {
   font-size: 2.5rem;
   padding: 0.5em;
   list-style: none;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
 .habit-count {
@@ -66,9 +86,9 @@ button {
   width: 2.5rem;
   height: 2.5rem;
   line-height: 2.5rem;
-  margin-left: 0.2em;
+  margin-left: 0.3em;
   margin-right: 0.5em;
-  background-color: darkseagreen;
+  background-color: #48426d;
   color: white;
   border-radius: 50%;
 }
@@ -85,17 +105,18 @@ button {
 
 .habit-increase,
 .habit-decrease {
-  color: goldenrod;
+  color: #e09664;
 }
 
 .habit-delete {
   font-size: 2rem;
-  color: darkred;
+  color: #6c4343;
 }
 
 .habits-reset {
   font-size: 1.5rem;
   padding: 0.2em 1em;
-  background-color: green;
+  background-color: #48426d;
   color: white;
+  margin: auto;
 }

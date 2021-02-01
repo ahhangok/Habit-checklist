@@ -36,7 +36,9 @@ import React, { PureComponent } from 'react'
             <button className="habit-button habit-delete" onClick={this.handleDelete}>
                 <i className="fas fa-trash"></i> 
             </button>
+            <div className="dash-bar"></div>
             </li>
+            
         )
     }
 }
