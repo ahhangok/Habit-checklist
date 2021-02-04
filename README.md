@@ -1,8 +1,8 @@
 <h1 align="center">Welcome to my Habit Checklist!📝</h1>
 
 > This site was created with React(class)
-> Click on the link and you can proceed to the project right away. (링크 클릭시 프로젝트 바로 확인 가능)
-> https://ahhangok.github.io/Habit-checklist/
+> Click on the link and you can proceed to the project right away. This site is optimized for Windows Chrome. Please look at the window. 
+> (링크 클릭시 프로젝트 바로 확인 가능) https://ahhangok.github.io/Habit-checklist/
 
 ## Main function
 
